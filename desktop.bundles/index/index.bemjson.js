@@ -1,10 +1,10 @@
 ({
-    block: 'b-page',
+    block: 'page',
     title: 'Title of the page',
     favicon: '/favicon.ico',
     head: [
-        { elem: 'css', url: '_index.css', ie: false },
-        { elem: 'css', url: '_index.ie.css', ie: 'gte IE 6' },
+        { elem: 'css', url: 'index.min.css', ie: false },
+        { elem: 'css', url: 'index.min', ie: true },
         { elem: 'meta', attrs: { name: 'description', content: '' }}
     ],
     content:[
@@ -26,7 +26,6 @@
                 'footer content goes here'
             ]
         },
-        { block: 'i-jquery', mods: { version: '1.8.3' } },
-        { elem: 'js', url: '_index.js' }
+        { elem: 'js', url: 'index.min.js' }
     ]
 })
