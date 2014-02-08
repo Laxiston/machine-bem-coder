@@ -1,9 +1,9 @@
 /* jshint node:true */
 
-
-//process.env.YENV = 'production';
 //process.env.XJST_ASYNCIFY = 'yes';
-//
+
+process.env.YENV = 'development';
+
 var PATH = require('path'),
     environ = require('bem-environ');
 
