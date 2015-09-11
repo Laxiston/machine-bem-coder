@@ -1,0 +1,12 @@
+.about
+{
+    font-size: 2em;
+
+    display: inline-block;
+
+    margin: 10px;
+    padding: 115px;
+
+    border: 2px dashed gray;
+    background: url('/desktop.bundles/merged/img/about.png');
+}

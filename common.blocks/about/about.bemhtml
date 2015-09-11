@@ -1,0 +1,9 @@
+block('about')(
+    js()(true), // needs for BEMDOM work
+
+    tag()('span'),
+
+    attrs()({
+        tabindex: 2
+    })
+);

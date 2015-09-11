@@ -1,6 +1,6 @@
 module.exports = {
     block : 'page',
-    title : 'Title of the Index page',
+    title : 'Title of the About page',
     favicon : '/favicon.ico',
     head : [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
@@ -11,20 +11,8 @@ module.exports = {
     mods : { theme : 'islands' },
     content : [
         {
-            block : 'header',
-            content : [
-                'header content goes here'
-            ]
-        },
-        {
-            block : 'content',
-            content : 'content goes here'
-        },
-        {
-            block : 'footer',
-            content : [
-                'footer content goes here'
-            ]
+            block: 'about',
+            content: 'about me'
         }
     ]
 };
