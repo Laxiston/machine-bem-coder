@@ -1,3 +1,5 @@
+/* See https://en.bem.info/tools/bem/enb-bem/ */
+
 var fs = require('fs'),
     path = require('path'),
     techs = {

@@ -1,5 +1,7 @@
 /* global modules:false */
 
+/* See https://en.bem.info/technology/i-bem/ */
+
 modules.define(
     'about',
     ['i-bem__dom'],

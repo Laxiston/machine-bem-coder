@@ -1,3 +1,4 @@
+/* See https://en.bem.info/technology/bemhtml/ */
 block('about')(
     js()(true), // needs for BEMDOM work
 
