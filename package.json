@@ -13,6 +13,7 @@
     "borschik-tech-cleancss": "^2.0.1",
     "csscomb": "^3.1.8",
     "enb": "^0.17.2",
+    "enb-beautify": "0.0.3",
     "enb-bem-techs": "^2.0.0",
     "enb-bemxjst": "^2.0.0",
     "enb-borschik": "^2.0.0",
@@ -22,12 +23,9 @@
     "ym": "^0.1.2"
   },
   "scripts": {
-    "start": "enb server",
+    "start": "node_modules/.bin/enb server",
     "deps": "npm i && bower i",
-    "build": "node_modules/.bin/enb make && npm run copy-merged",
-    "copy-merged": "npm run copy-merged-css && npm run copy-merged-js",
-    "copy-merged-css": "cp desktop.bundles/merged/merged.min.css desktop.bundles/merged/css/merged.min.css",
-    "copy-merged-js": "cp desktop.bundles/merged/merged.min.js desktop.bundles/merged/js/merged.min.js"
+    "build": "node_modules/.bin/enb make && ./build.sh"
   },
   "private": true
 }

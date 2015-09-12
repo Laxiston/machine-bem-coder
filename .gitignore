@@ -10,6 +10,8 @@ npm-debug.log
 .bem/cache/
 .enb/tmp/
 *bundles*/*/*.*
+*bundles*/*/*
+!*bundles*/merged/img
 !*bundles*/*/*.bemjson.js
 !*bundles*/*/*.gitignore
 !*bundles*/.bem/*
