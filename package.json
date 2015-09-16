@@ -20,6 +20,7 @@
     "enb-diverse-js": "^0.1.0",
     "enb-modules": "^0.2.0",
     "enb-stylus": "^2.0.0",
+    "gulp": "^3.9.0",
     "ym": "^0.1.2"
   },
   "scripts": {
