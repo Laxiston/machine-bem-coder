@@ -1,4 +1,6 @@
 var gulp = require('gulp');
+var MakePlatform = require('enb/lib/make');
+var enb_make = new MakePlatform();
 
 /* TODO: */
 
@@ -11,7 +13,16 @@ gulp.task('server', function() {
 });
 
 gulp.task('compile', function() {
-    // enb make all
+    return enb_make.init(process.cwd())
+        .then(function () {
+            enb_make.loadCache();
+
+            return enb_make.build([]);
+        })
+        .then(function () {
+            enb_make.saveCache();
+            enb_make.destruct();
+        });
 });
 
 gulp.task('build', function() {
