@@ -12,6 +12,7 @@
     "bemhtml-compat": "^0.1.2",
     "borschik-tech-cleancss": "^2.0.1",
     "csscomb": "^3.1.8",
+    "del": "^2.0.2",
     "enb": "^0.17.2",
     "enb-beautify": "0.0.3",
     "enb-bem-techs": "^2.0.0",
