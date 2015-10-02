@@ -22,11 +22,7 @@ var fs = require('fs'),
 
         // bemhtml
         bemhtml: require('enb-bemxjst/techs/bemhtml'),
-        bemjsonToHtml: require('enb-bemxjst/techs/bemjson-to-html'),
-
-        // beautify html and css
-        htmlBeautify: require('enb-beautify/techs/enb-beautify-html'),
-        cssBeautify: require('enb-beautify/techs/enb-beautify-css')
+        bemjsonToHtml: require('enb-bemxjst/techs/bemjson-to-html')
     },
     enbBemTechs = require('enb-bem-techs'),
     merged = require('./techs/merged'),
@@ -55,9 +51,7 @@ module.exports = function(config) {
 
         isMergedNode || nodeConfig.addTechs([
             [techs.fileProvider, { target: '?.bemjson.js' }],
-            [enbBemTechs.bemjsonToBemdecl],
-            [techs.htmlBeautify],
-            [techs.cssBeautify]
+            [enbBemTechs.bemjsonToBemdecl]
         ]);
 
         nodeConfig.addTechs([
@@ -118,6 +112,6 @@ module.exports = function(config) {
         ]);
 
         nodeConfig.addTargets([/* '?.bemtree.js', */ '?.min.css', '?.min.js']);
-        isMergedNode || nodeConfig.addTargets(['?.html', '?.beauty.html', '?.beauty.css']);
+        isMergedNode || nodeConfig.addTargets(['?.html']);
     });
 };
